@@ -11,7 +11,7 @@
     "serve": "jiti ./server/index.ts",
     "fetch": "node ./data/build.js",
     "publish": "npm run build && node ./build/publish.js",
-    "prettier": "prettier --write ./src/**/*.{ts,vue,scss}"
+    "prettier": "prettier --write ."
   },
   "devDependencies": {
     "@iconify/vue2": "2.1.0",

@@ -4,4 +4,4 @@ export const SubTypeDisplayMap: any = {
   quality: "质量",
   command: "命令",
   eg: "负面",
-}
+};

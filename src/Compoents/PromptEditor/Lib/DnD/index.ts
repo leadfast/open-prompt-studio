@@ -1,5 +1,5 @@
 export function dndInit() {
-    document.body.addEventListener("mousedown", mousedown)
+  document.body.addEventListener("mousedown", mousedown);
 }
 
 function mousedown(e: MouseEvent) {}

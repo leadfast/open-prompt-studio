@@ -10,13 +10,13 @@
 
 这是一个旨在把 AIGC 提示词（现在支持 Midjourney）可视化并提供编辑功能的工具，有以下特性
 
--   显示英文提示词的中文翻译
--   翻译输入的中文提示词到英文（因为 Midjourney 仅支持英文提示词）
--   为提示词进行分类（普通、样式、质量、命令）
--   轻松的排序、隐藏提示词
--   把提示词可视化结果导出为图片
--   常用提示词词典
--   通过 Notion 管理提示词词典
+- 显示英文提示词的中文翻译
+- 翻译输入的中文提示词到英文（因为 Midjourney 仅支持英文提示词）
+- 为提示词进行分类（普通、样式、质量、命令）
+- 轻松的排序、隐藏提示词
+- 把提示词可视化结果导出为图片
+- 常用提示词词典
+- 通过 Notion 管理提示词词典
 
 ## 使用教程
 
@@ -95,11 +95,11 @@ OPS 支持使用 [Notion](https://www.notion.so/) 来管理自己的词典，使
 
 在 OPS 右上角打开提示词词典，鼠标放在「连接我的 Notion」按钮上，展开设置面板
 
--   「Integrations Token」 里面填入前面我们生成的集成 Token 秘钥（秘钥只会保存在浏览器本地（localStorage），不会被上传到任何地方）
+- 「Integrations Token」 里面填入前面我们生成的集成 Token 秘钥（秘钥只会保存在浏览器本地（localStorage），不会被上传到任何地方）
 
--   「Database ID」里粘贴你 Notion 数据库的访问地址
+- 「Database ID」里粘贴你 Notion 数据库的访问地址
 
--   然后点击「载入」按钮
+- 然后点击「载入」按钮
 
 <p align="center">
     <img width="720" src="https://user-images.githubusercontent.com/82231420/230758301-57f5304e-b83b-4ee6-a91c-0c030e84213a.png">
@@ -112,7 +112,6 @@ OPS 支持使用 [Notion](https://www.notion.so/) 来管理自己的词典，使
 <p align="center">
     <img width="720" src="https://user-images.githubusercontent.com/82231420/230758271-c2ee8ba3-e694-45db-a209-55c4d1744171.png">
 </p>
-
 
 ## 更好的体验
 
@@ -130,15 +129,14 @@ OPS 支持使用 [Notion](https://www.notion.so/) 来管理自己的词典，使
 运行打开后访问 `localhost:12833/apps/ops/`
 
 ### Docker
-如果你不想安装 NodeJS 环境，可以使用 Docker 运行，参考 [./docker](https://github.com/Moonvy/OpenPromptStudio/tree/master/docker/)
 
+如果你不想安装 NodeJS 环境，可以使用 Docker 运行，参考 [./docker](https://github.com/Moonvy/OpenPromptStudio/tree/master/docker/)
 
 ### 如何修改默认提示词词典
 
 1. 在 [./data/src](https://github.com/Moonvy/OpenPromptStudio/tree/master/data/src) 中编辑 `.csv` 文件，你可以用 Excel、Numbers 或者纯文本编辑器编辑。
 
 2. 在 [Notion](https://www.notion.so/) 中编辑（[./data/src/notion/fromNotion.js](https://github.com/Moonvy/OpenPromptStudio/tree/master/data/src/notion/fromNotion.js) ）
-
 
 ### 翻译服务
 
@@ -149,8 +147,8 @@ OPS 支持使用 [Notion](https://www.notion.so/) 来管理自己的词典，使
 `.env`：
 
 ```node
-TENCENT_SECRET_ID = "AKIDXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-TENCENT_SECRET_KEY = "a5XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+TENCENT_SECRET_ID = "AKIDXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+TENCENT_SECRET_KEY = "a5XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
 ```
 
 然后运行 `npm run serve` 启动本地翻译服务
