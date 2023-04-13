@@ -4,7 +4,7 @@ import axios from "axios";
 
 let cache: any = {};
 
-export async function translate(testList: string[], options: { server: string } = { server: "http://localhost:19212/prompt-studio/translate" }) {
+export async function translate(testList: string[], options: { server: string } = { server: "/api/prompt-studio/translate" }) {
   let resultList: string[][] = [];
   let reqList: [string, number][] = [];
   testList.forEach((text, i) => {

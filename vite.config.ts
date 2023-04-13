@@ -9,8 +9,7 @@ import * as process from "process";
 
 // https://vitejs.dev/config/
 let config = {
-  root: "./web",
-  base: "/apps/ops/",
+  base: "./",
   server: {
     port: 12833,
   },
@@ -25,12 +24,6 @@ let config = {
     emptyOutDir: true,
     outDir: resolve(__dirname, "dist"),
     assetsDir: `version/2023-03/`,
-    publicDir: resolve(__dirname, "web/public"),
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, "web/index.html"),
-      },
-    },
     reportCompressedSize: false,
   },
   resolve: {

@@ -1,11 +1,8 @@
 import { PromptWork } from "./Sub/PromptWork";
+const apiHost = import.meta.env.VITE_API_HOST;
 
 export class PromptEditorClass {
-  data = {
-    server: location.host.startsWith("localhost") ? "http://localhost:19212/prompt-studio" : "https://indexfs.moonvy.com:19213/prompt-studio",
-    enablePngExportFixed: false,
-    enablePngExportCopy: false,
-  };
+  data = { server: apiHost, enablePngExportFixed: false, enablePngExportCopy: false };
 
   works: PromptWork[] = [
     new PromptWork({

@@ -21,10 +21,7 @@ export async function translatePrompts(testList: string[], options?: { server?: 
     let host = (<any>globalThis).__OPS_SERVER;
     let orgWords = reqList.map((req) => req[0]);
     if (orgWords.length == 0) return resultList.map((x) => x[1]);
-    let re = await axios.post(`${options?.server ?? `${host}/translate/prompts`}`, {
-      words: orgWords,
-      to: options?.to ?? "zh",
-    });
+    let re = await axios.post(`${options?.server ?? `${host}/translate/prompts`}`, { words: orgWords, to: options?.to ?? "zh" });
 
     if (re && re.data) {
       let list = re.data;

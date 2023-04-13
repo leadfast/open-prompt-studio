@@ -3,17 +3,7 @@ import vIndex from "../Pages/Index/Index.vue";
 import type { VueConstructor } from "vue";
 
 export function getRoutes() {
-  return [
-    {
-      path: "/",
-      redirect: "/apps/ops/",
-    },
-    {
-      path: "/apps/ops/",
-      name: "Index",
-      component: vIndex,
-    },
-  ];
+  return [{ path: "/", name: "Index", component: vIndex }];
 }
 
 export function getPagesRouter(Vue: VueConstructor) {

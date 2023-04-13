@@ -22,9 +22,9 @@
           {{ t("翻译服务：") }}
         </div>
         <select v-model="promptEditor.data.server">
-          <option value="http://localhost:19212/prompt-studio">本地测试</option>
-          <option value="https://indexfs.moonvy.com:19213/prompt-studio">腾讯翻译</option>
-          <option value="https://indexfs.moonvy.com:19213/prompt-studio/ai" disabled>OpenAI GPT-3.5 (WIP)</option>
+          <option value="/api/prompt-studio">本地测试</option>
+          <option value="/api/prompt-studio/tencent">腾讯翻译</option>
+          <option value="/api/prompt-studio/ai" disabled>OpenAI GPT-3.5 (WIP)</option>
         </select>
       </div>
     </div>
